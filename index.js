@@ -68,7 +68,7 @@ const sessionConfig = {
     cookie: {
         httpOnly: true,    // our cookies which are set through the session are only accessible over http and not accessible through javascript
         // should use 'secure:true' when we deploy 
-        // secure : true ,   // cookies should only work over 'https' and not 'http', localhost is not 'https'
+        secure : true ,   // cookies should only work over 'https' and not 'http', localhost is not 'https'
         expires: Date.now() + 1000 * 60 * 60 * 24 * 7,   //if we want to expire in 7 days , Date.now give in miliseconds
         maxAge: 1000 * 60 * 60 * 24 * 7
     }
